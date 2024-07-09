@@ -5,15 +5,15 @@ export default function Layout(){
     if (users) {
         return (
             <div> 
-                <div className="flex" data-theme='dark'>
+                <div className="flex">
                     <Sitebar/>
                     <div className="w-full">
                         <div className="navbar h-[80px] bg-primary-content flex justify-between">
-                            <h1 className="font-bold text-[30px] text-white pl-[40px]">hello john 👋</h1>
+                            <h1 className="font-bold text-[30px] text-white pl-[40px]">hello 👋</h1>
                             <button className="btn rounded-full">John</button>
                         </div>
-                        <div className="flex">
-                            <main className="ml-[30px] mt-[30px]">
+                        <div className="w-full">
+                            <main className="max-w-[1440px] mx-auto mt-[30px]">
                                 <Outlet/>
                             </main>
                         </div>
